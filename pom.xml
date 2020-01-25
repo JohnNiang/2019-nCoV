@@ -12,7 +12,7 @@
     </parent>
     <groupId>me.johnniang</groupId>
     <artifactId>2019-ncov</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>2019-ncov</name>
     <description>2019-nCoV email notification.</description>
 
