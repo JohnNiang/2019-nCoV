@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <title>最新报道</title>
+</head>
+<body>
+
+<div style="line-height: 26px;" th:each="timeline: ${timelines}">
+    <div style="margin: 10px auto;width: 100%;">
+        <h3 th:text="${timeline.title}">北京又一名新型肺炎患者痊愈出院</h3>
+        <span style="display: block; margin: 10px auto;" th:text="${timeline.pubDateStr}">5 分钟前</span>
+        <p th:text="${timeline.getSummary()}"></p>
+        <a style="text-align: right;display: block;" th:href="${timeline.getSourceUrl()}"
+           th:text="'信息来源：' + ${timeline.getInfoSource()}"></a>
+    </div>
+    <hr>
+</div>
+
+</body>
+</html>
