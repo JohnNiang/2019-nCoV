@@ -10,11 +10,12 @@
 
 <div style="line-height: 26px;" th:each="timeline: ${timelines}">
     <div style="margin: 10px auto;width: 100%;">
-        <h3 th:text="${timeline.title}">北京又一名新型肺炎患者痊愈出院</h3>
-        <span style="display: block; margin: 10px auto;" th:text="${timeline.pubDateStr}">5 分钟前</span>
-        <p th:text="${timeline.getSummary()}"></p>
+        <h3 th:text="${timeline.title}">外交部回应美国撤回驻武汉总领馆人员</h3>
+        <span style="display: block; margin: 10px auto;" th:text="${timeline.pubDateStr}">9分钟前</span>
+        <p th:text="${timeline.getSummary()}">
+            外交部发言人华春莹就美国驻武汉总领馆宣布闭馆并将撤回美方人员事答记者问：武汉新型冠状病毒感染的肺炎疫情发生以来，中方及时向世界卫生组织及有关国家通报疫情信息，并保持密切沟通。日前，美方提出希将美驻武汉总领馆人员从武汉撤回美国。中方根据国际惯例，依照中方有关防疫规定，作出相应安排，提供必要协助和便利</p>
         <a style="text-align: right;display: block;" th:href="${timeline.getSourceUrl()}"
-           th:text="'信息来源：' + ${timeline.getInfoSource()}"></a>
+           th:text="'信息来源：' + ${timeline.getInfoSource()}">央视新闻</a>
     </div>
     <hr>
 </div>
